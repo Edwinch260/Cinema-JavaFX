@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cobasql.Insert">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Nama Film" textAlignment="CENTER">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin></Label>
+      <Label alignment="CENTER" text="Batas Usia" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin></Label>
+      <Label text="Sinopsis" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin></Label>
+      <TableView fx:id="table" prefHeight="165.0" prefWidth="300.0" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+      <DatePicker fx:id="dp" prefHeight="26.0" prefWidth="162.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></DatePicker>
+      <Label text="Jam Tayang" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin></Label>
+      <TextField fx:id="nmFilm" prefHeight="26.0" prefWidth="251.0" promptText="Nama Film" GridPane.columnIndex="1" />
+      <TextField fx:id="batas" promptText="Batas Usia" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="sinop" promptText="Sinopsis" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="studio" promptText="Studio" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="jam" promptText="Jam Tayang" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Button mnemonicParsing="false" onAction="#onButtonClick" text="Tambah" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+      <Button mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="60.0" text="Back" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="61.0" text="Tanggal" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

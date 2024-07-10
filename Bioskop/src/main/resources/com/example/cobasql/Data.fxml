@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="473.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cobasql.Data">
+   <children>
+      <TableView fx:id="tableView" layoutX="166.0" layoutY="118.0" prefHeight="344.0" prefWidth="766.0">
+         <columns>
+            <TableColumn fx:id="namaAkunColumn" prefWidth="72.79998779296875" text="Nama Akun" />
+            <TableColumn fx:id="emailColumn" prefWidth="58.399993896484375" text="Email" />
+            <TableColumn fx:id="virtualAccountColumn" prefWidth="64.39999389648438" text="Virtual Account" />
+            <TableColumn fx:id="namaFilmColumn" prefWidth="81.20001220703125" text="Nama Film" />
+            <TableColumn fx:id="namaRuanganColumn" prefWidth="98.199951171875" text="Nama Ruangan" />
+            <TableColumn fx:id="tanggalColumn" prefWidth="63.20001220703125" text="Tanggal Tayang" />
+            <TableColumn fx:id="jamColumn" prefWidth="70.60003662109375" text="Jam" />
+            <TableColumn fx:id="jumlahTiketColumn" prefWidth="84.0" text="Jumlah Tiket" />
+            <TableColumn fx:id="tanggalTransaksiColumn" minWidth="0.0" prefWidth="83.79998779296875" text="Tanggal Transaksi" />
+            <TableColumn fx:id="jumlahTotalColumn" prefWidth="100.20001220703125" text="Jumlah Total" />
+            <TableColumn fx:id="idAkunColumn" prefWidth="75.0" text="Id Akun" />
+            <TableColumn fx:id="batasUsiaColumn" prefWidth="75.0" text="Batas Usia" />
+            <TableColumn fx:id="sinopsisColumn" prefWidth="75.0" text="Sinopsis" />
+            <TableColumn fx:id="lantaiColumn" prefWidth="75.0" text="Lantai" />
+         </columns></TableView>
+      <Button layoutX="225.0" layoutY="84.0" mnemonicParsing="false" onAction="#onViewButton" text="View" />
+      <Button layoutX="282.0" layoutY="84.0" mnemonicParsing="false" onAction="#onUpdateButton" text="Update" />
+      <Button layoutX="347.0" layoutY="84.0" mnemonicParsing="false" onAction="#onDeleteButton" text="Delete" />
+      <Button layoutX="597.0" layoutY="83.0" mnemonicParsing="false" onAction="#onViewAllButton" prefHeight="26.0" prefWidth="94.0" text="View All" />
+      <DatePicker fx:id="fromDate" layoutX="411.0" layoutY="13.0" promptText="From" />
+      <DatePicker fx:id="toDate" layoutX="411.0" layoutY="48.0" promptText="To" />
+      <TextField fx:id="username" layoutX="12.0" layoutY="13.0" prefHeight="26.0" prefWidth="141.0" promptText="Username" />
+      <TextField fx:id="email" layoutX="12.0" layoutY="48.0" prefHeight="26.0" prefWidth="141.0" promptText="Email" />
+      <Button layoutX="12.0" layoutY="125.0" mnemonicParsing="false" onAction="#onAddAdminButton" prefHeight="26.0" prefWidth="74.0" text="Add admin" />
+      <PasswordField fx:id="password" layoutX="12.0" layoutY="85.0" prefHeight="26.0" prefWidth="142.0" promptText="Password" />
+      <TextField fx:id="title" layoutX="166.0" layoutY="13.0" prefHeight="26.0" prefWidth="232.0" promptText="Title" />
+      <TextField fx:id="studio" layoutX="166.0" layoutY="48.0" prefHeight="26.0" prefWidth="232.0" promptText="Studio" />
+      <TextField fx:id="time" layoutX="411.0" layoutY="85.0" prefHeight="26.0" prefWidth="58.0" promptText="Time" />
+      <TextField fx:id="accountName" layoutX="479.0" layoutY="84.0" prefHeight="26.0" prefWidth="105.0" promptText="Account Name" />
+      <TextArea fx:id="info" layoutX="597.0" layoutY="13.0" prefHeight="62.0" prefWidth="94.0" promptText="info" />
+      <Button layoutX="823.0" layoutY="63.0" mnemonicParsing="false" onAction="#onMonthlyIncomeButton" prefHeight="40.0" prefWidth="106.0" text="Monthly income" />
+      <Button layoutX="699.0" layoutY="65.0" mnemonicParsing="false" onAction="#onTotalIncomeButton" prefHeight="40.0" prefWidth="106.0" text="Total Income" />
+      <Button layoutX="166.0" layoutY="84.0" mnemonicParsing="false" onAction="#onAddButton" prefHeight="26.0" prefWidth="50.0" text="Add" />
+      <Button layoutX="98.0" layoutY="125.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="26.0" prefWidth="55.0" text="Logout" />
+      <Button layoutX="699.0" layoutY="13.0" mnemonicParsing="false" onAction="#onLoyalCustomerButton" prefHeight="40.0" prefWidth="106.0" text="Customers" />
+      <Button layoutX="823.0" layoutY="13.0" mnemonicParsing="false" onAction="#onMostBoughtButton" prefHeight="40.0" prefWidth="106.0" text="Most Bought" />
+   </children>
+</AnchorPane>

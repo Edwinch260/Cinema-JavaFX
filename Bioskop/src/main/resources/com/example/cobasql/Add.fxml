@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cobasql.Add">
+   <children>
+      <TableView fx:id="tableAkun" layoutX="14.0" layoutY="46.0" prefHeight="135.0" prefWidth="130.0">
+        <columns>
+          <TableColumn fx:id="idAkunColumn" prefWidth="66.39999198913574" text="Id Akun" />
+          <TableColumn fx:id="namaAkunColumn" prefWidth="63.199989318847656" text="Nama Akun" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableFilm" layoutX="166.0" layoutY="46.0" prefHeight="135.0" prefWidth="449.0">
+        <columns>
+          <TableColumn fx:id="idFilmColumn" prefWidth="44.4000244140625" text="Id Film" />
+          <TableColumn fx:id="namaFilmColumn" prefWidth="72.19998168945312" text="Nama Film" />
+            <TableColumn fx:id="namaRuanganColumn" prefWidth="110.0" text="Nama Ruangan" />
+            <TableColumn fx:id="tanggalColumn" prefWidth="76.0" text="Tanggal" />
+            <TableColumn fx:id="jamColumn" prefWidth="73.0" text="Jam" />
+            <TableColumn fx:id="idRuanganColumn" prefWidth="75.0" text="Id Ruangan" />
+            <TableColumn fx:id="lantaiColumn" prefWidth="75.0" text="lantai" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idAkun" layoutX="14.0" layoutY="211.0" prefHeight="26.0" prefWidth="130.0" promptText="Id Akun" />
+      <TextField fx:id="idRuangan" layoutX="166.0" layoutY="212.0" prefHeight="26.0" prefWidth="59.0" promptText="Id Ruangan" />
+      <DatePicker fx:id="tanggalTransaksi" layoutX="13.0" layoutY="264.0" prefHeight="26.0" prefWidth="286.0" promptText="Transaction Date" />
+      <TextField fx:id="jumlahTiket" layoutX="14.0" layoutY="315.0" prefHeight="26.0" prefWidth="130.0" promptText="Number of tickets" />
+      <TextField fx:id="jumlahTotal" layoutX="169.0" layoutY="316.0" prefHeight="26.0" prefWidth="130.0" promptText="Total Price" />
+      <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="76.0" text="Back" />
+      <Button layoutX="171.0" layoutY="360.0" mnemonicParsing="false" onAction="#onAddButton" prefHeight="26.0" prefWidth="130.0" text="Add" />
+      <TextField fx:id="jam" layoutX="243.0" layoutY="212.0" prefHeight="26.0" prefWidth="59.0" promptText="Jam" />
+      <Button layoutX="559.0" layoutY="361.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
+   </children>
+</AnchorPane>

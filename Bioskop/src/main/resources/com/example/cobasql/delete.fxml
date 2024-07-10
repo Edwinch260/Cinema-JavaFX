@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cobasql.delete">
+   <children>
+      <TableView fx:id="tableFilm" prefHeight="298.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="135.79999387264252" text="Id Film" />
+          <TableColumn minWidth="0.0" prefWidth="129.0" text="Jam" />
+            <TableColumn prefWidth="189.0" text="Tanggal" />
+            <TableColumn prefWidth="146.0" text="Nama Film" />
+        </columns>
+      </TableView>
+      <Button layoutX="522.0" layoutY="341.0" mnemonicParsing="false" onAction="#onDeleteClick" text="Delete" />
+      <Button layoutX="35.0" layoutY="340.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="26.0" prefWidth="50.0" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cobasql.ProdukSering">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="56.0" prefHeight="288.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="filmColumn" prefWidth="165.59997844696045" text="Nama Film" />
+          <TableColumn fx:id="jumlahColumn" prefWidth="173.3999786376953" text="Jumlah" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="87.0" text="Back" />
+      <Button layoutX="300.0" layoutY="359.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
+   </children>
+</AnchorPane>

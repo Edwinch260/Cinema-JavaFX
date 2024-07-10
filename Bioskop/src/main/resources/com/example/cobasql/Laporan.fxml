@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cobasql.Laporan">
+   <children>
+      <TableView fx:id="tableView" layoutX="15.0" layoutY="58.0" prefHeight="298.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="namaAkunColumn" prefWidth="83.40000772476196" text="Nama Akun" />
+          <TableColumn fx:id="emailColumn" text="Email" />
+            <TableColumn fx:id="virtualAccountColumn" prefWidth="101.19999694824219" text="Virtual Account" />
+            <TableColumn fx:id="tanggalTransaksiColumn" prefWidth="133.39996337890625" text="Tanggal Transaksi" />
+            <TableColumn fx:id="jumlahTiketColumn" prefWidth="87.79998779296875" text="Jumlah Tiket" />
+            <TableColumn fx:id="jumlahTotalColumn" prefWidth="113.800048828125" text="Jumlah Total" />
+        </columns>
+      </TableView>
+      <TextField fx:id="total" layoutX="509.0" layoutY="367.0" prefHeight="26.0" prefWidth="97.0" />
+      <Button layoutX="15.0" layoutY="367.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="83.0" text="Back" />
+      <Button layoutX="554.0" layoutY="22.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
+   </children>
+</AnchorPane>
